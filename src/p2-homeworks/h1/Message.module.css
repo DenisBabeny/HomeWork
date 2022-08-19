@@ -1,0 +1,57 @@
+
+.message {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+    background-color: antiquewhite;
+}
+
+.aria {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-left: 20px;
+    padding: 10px 50px 10px 10px;
+    background-color: aliceblue;
+    min-width: 200px;
+    max-width: 500px;
+    border-radius: 5px;
+
+}
+
+.aria :before {
+
+}
+
+.img {
+    margin-left: 15px;
+    min-width: 50px;
+    height: 50px;
+    border: 3px solid #d3cedb;
+    border-radius: 50%;
+}
+
+.text {
+    margin: 0px;
+    font-family: "Times New Roman";
+    font-size: 15px;
+    color: gray;
+}
+
+.name {
+    margin: 0px;
+    padding-bottom: 5px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.time {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+
+}
+
+
