@@ -12,6 +12,9 @@ export function Message(props: MessageType) {
     return (
         <div className={style.message}>
             <img className={style.img} src={props.avatar} alt={"image"}/>
+
+            <div className={style.angle}/>
+
             <div className={style.aria}>
                 <h2 className={style.name}>{props.name}</h2>
                 <p className={style.text}>{props.message}</p>
