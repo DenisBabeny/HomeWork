@@ -1,7 +1,23 @@
 .someClass {
-
+display: flex;
+    flex-direction: column;
+}
+.error{
+    border: 1px solid red;
 }
 
-.error {
-    border: 1px solid red;
+.button {
+    background-color: #61dafb;
+    border: 2px solid gray;
+    border-radius: 70%;
+    margin-left: 5px;
+}
+.button:active {
+    background-color: #61dafb;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.span{
+margin-left: 10px;
+    color: hotpink;
 }
