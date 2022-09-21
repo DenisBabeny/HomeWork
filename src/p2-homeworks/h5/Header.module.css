@@ -1,0 +1,33 @@
+.link {
+    text-decoration: none;
+    color: hotpink;
+    margin: 10px;
+}
+
+.link:hover {
+    color: #d3cedb;
+}
+
+.active {
+    color: blueviolet;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+
+
+}
+
+.header {
+    display: flex;
+    width: 500px;
+    transition-duration: 500ms;
+    transform: translate(-230px);
+}
+
+.header:hover {
+    transition-duration: 500ms;
+    transform: translate(0);
+}
