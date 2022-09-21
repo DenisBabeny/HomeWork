@@ -1,8 +1,9 @@
 .someClass {
-display: flex;
+    display: flex;
     flex-direction: column;
 }
-.error{
+
+.error {
     border: 1px solid red;
 }
 
@@ -12,12 +13,14 @@ display: flex;
     border-radius: 70%;
     margin-left: 5px;
 }
+
 .button:active {
     background-color: #61dafb;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
 }
-.span{
-margin-left: 10px;
-    color: hotpink;
+
+.span {
+    margin-left: 10px;
+    color: gold;
 }

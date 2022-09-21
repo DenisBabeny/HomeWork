@@ -1,5 +1,7 @@
 import React, {ChangeEvent, KeyboardEvent} from 'react'
 import s from './Greeting.module.css'
+import SuperInputText from "./input/SuperInputText";
+import SuperButton from "./Button/SuperButton";
 
 
 type GreetingPropsType = {
@@ -8,7 +10,7 @@ type GreetingPropsType = {
     addUser: () => void // need to fix any
     error: boolean// need to fix any
     totalUsers: number // need to fix any
-    onKeyDownAddTask: (e:KeyboardEvent<HTMLInputElement>)=>void
+    onKeyDownAddTask: (e: KeyboardEvent<HTMLInputElement>) => void
     UserMessage: any
 }
 
@@ -16,14 +18,19 @@ type GreetingPropsType = {
 const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error, totalUsers, onKeyDownAddTask, UserMessage} // деструктуризация пропсов
 ) => {
-    const inputClass = s.error  // need to fix with (?:)
-const buttonClass = s.button
+    const inputClass = error ? s.error : '' // need to fix with (?:)
+    const buttonClass = s.button
     return (
         <div className={s.someClass}>
             <div>
-                <input value={name} onChange={setNameCallback} className={error ? s.error : ''} onKeyDown={onKeyDownAddTask}/>
+                <SuperInputText
+                    value={name} onChange={setNameCallback} className={inputClass}
+                    onKeyDown={onKeyDownAddTask}
+                />
                 <span>{error}</span>
-                <button onClick={addUser} className={buttonClass}>add</button>
+                <SuperButton
+                    onClick={addUser}
+                    className={buttonClass}>add</SuperButton>
                 <span className={s.span}>{totalUsers}</span>
             </div>
             <div>{UserMessage}</div>

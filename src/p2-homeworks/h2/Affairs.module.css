@@ -1,3 +1,31 @@
 .someClass {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid cornflowerblue;
+    width: 20%;
+}
+.affair{
+    display: flex;
+    width: 100%;
+}
+.buttonDelete {
+    color: #61dafb;
+}
 
+.buttonSelected {
+    margin-right: 10px;
+    width: 20%;
+}
+.item{
+    margin: 10px;
+    width: 50%;
+}
+.high{
+    color: red;
+}
+.middle{
+    color:green;
+}
+.low{
+    color: blue;
 }
